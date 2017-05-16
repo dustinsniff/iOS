@@ -41,18 +41,42 @@
                                     <action selector="tapButton2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zlG-Rp-AsU"/>
                                 </connections>
                             </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cLx-5W-H3Q">
+                                <rect key="frame" x="137" y="298" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="0VR-Se-sNG"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fXE-65-cUw">
+                                <rect key="frame" x="137" y="240" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="tIU-JZ-jqi"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="cLx-5W-H3Q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="06Z-Sq-MJ5"/>
                             <constraint firstItem="dQW-us-Qhn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6fI-e6-7oh"/>
                             <constraint firstItem="UcX-hY-mFk" firstAttribute="top" secondItem="Awa-UU-oak" secondAttribute="bottom" constant="10" id="BFx-gN-XQ8"/>
+                            <constraint firstItem="fXE-65-cUw" firstAttribute="top" secondItem="dQW-us-Qhn" secondAttribute="bottom" constant="21" id="Fi3-j4-vY4"/>
                             <constraint firstItem="UcX-hY-mFk" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Grx-dK-Fek"/>
                             <constraint firstItem="Awa-UU-oak" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="100" id="JSi-pe-RTz"/>
                             <constraint firstItem="dQW-us-Qhn" firstAttribute="top" secondItem="UcX-hY-mFk" secondAttribute="bottom" constant="8" id="cMa-J9-IIu"/>
                             <constraint firstItem="Awa-UU-oak" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cl0-os-5Pp"/>
+                            <constraint firstItem="fXE-65-cUw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dbI-p5-sHG"/>
+                            <constraint firstItem="cLx-5W-H3Q" firstAttribute="top" secondItem="fXE-65-cUw" secondAttribute="bottom" constant="28" id="wsG-V5-8VY"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="text1" destination="fXE-65-cUw" id="bxS-J3-JnK"/>
+                        <outlet property="text2" destination="cLx-5W-H3Q" id="WZM-QK-Rny"/>
                         <outlet property="theLabel" destination="Awa-UU-oak" id="Tgz-KL-aBT"/>
                     </connections>
                 </viewController>

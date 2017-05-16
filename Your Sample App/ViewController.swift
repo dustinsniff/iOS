@@ -14,14 +14,9 @@ class ViewController: UIViewController {
         theLabel.text = "Buttons are cool!"
 
     }
-    var tapCount = 0
     @IBAction func buttonTapped(_ sender: Any) {
-        theLabel.text = "Hello there!"
-        tapCount = tapCount + 1
-        if tapCount >= 20{
-            theLabel.text = "You tapped the button 20 times!"
-        }
-        
+        theLabel.text =  "Answer: \(Double(text1.text!)! + Double(text2.text!)!)"
+
 
 
     }
@@ -31,11 +26,13 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
 
+    @IBOutlet weak var text1: UITextField!
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
 
+    @IBOutlet weak var text2: UITextField!
 
 }
 
